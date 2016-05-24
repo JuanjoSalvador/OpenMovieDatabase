@@ -1,0 +1,18 @@
+<ion-navbar *navbar danger>
+  <ion-title>
+    Open Movie Database
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+    <img src="img/clapper.png" class="logo"/>
+    <ion-list inset>
+        <ion-item>
+            <ion-input [(ngModel)]="title" type="text" placeholder="Search..."></ion-input>
+        </ion-item>
+    </ion-list>
+    <div padding>
+        <button full danger (click)="getMovies()">Search</button>
+    </div>
+</ion-content>  
+

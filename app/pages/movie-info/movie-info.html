@@ -1,0 +1,28 @@
+<ion-navbar *navbar danger>
+  <ion-title>Info</ion-title>
+</ion-navbar>
+
+<ion-content padding class="movie-info">    
+    <h2>{{title}}</h2>    
+    <table>
+      <tr>
+        <td><strong>Country</strong>:</td> <td>{{country}}</td>
+      </tr>
+      <tr>
+        <td><strong>Director</strong>:</td> <td>{{director}}</td>
+      </tr>
+      <tr>
+        <td><strong>Actors</strong>:</td> <td>{{actors}}</td>
+      </tr>
+      <tr>
+        <td><strong>Year</strong>:</td> <td>{{year}}</td>
+      </tr>
+      <tr>
+        <td><strong>Plot</strong>:</td> <td>{{sinopsis}}</td>
+      </tr>
+      <tr>
+        <td><strong>Rating</strong>:</td> <td>{{rating}}</td>
+      </tr>
+    </table>
+    <h3><a [href]=imdb_link class="link">View on IMDb</a></h3>
+</ion-content>
